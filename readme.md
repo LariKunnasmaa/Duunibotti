@@ -43,6 +43,10 @@ This projects AI digs deeper to reveal hidden remote opportunities and other key
 
 ---
 
+## Upcoming features
+- Next the project will be able to be ran in containers. 
+
+
 > **Level up your job search with automation and AI—find better jobs, faster!**
 ---
 
