@@ -1,10 +1,10 @@
-from duunitori.class_session import init_session
-from pickle_helper import load, pickle_save
-from duunitori.class_session import SeleniumSession
+from .class_session import init_session
+from .pickle_helper import load, pickle_save
+from .class_session import SeleniumSession
 import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from duunitori.class_job import Job
+from .class_job import Job
 
 def generate_search_url(page):
     """

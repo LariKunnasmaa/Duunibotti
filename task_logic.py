@@ -1,5 +1,5 @@
 from task_data_retival import get_job_datas
-from task_excel_formatting import excel_mani
+from task_excel_formatting import excel_formatting
 from task_llm_call import call_llm
 
 
@@ -21,4 +21,4 @@ Entry Point:
 if __name__ == '__main__':
     jobs_list =  get_job_datas()
     jobs_list = call_llm(jobs_list)
-    excel_mani(jobs_list)
+    excel_formatting(jobs_list)
