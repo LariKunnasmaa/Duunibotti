@@ -31,6 +31,7 @@ def add_hyperlink(ws, cell_address, url, display_text, color="0000FF", underline
 
 
 def excel_formatting(jobs_list:list[Job], path = "jobs.xlsx"):
+    """Formats the excel by calling functions to format the excel  """
     df = pd.DataFrame([vars(a) for a in jobs_list])
     df[["Käsitelty"]] = ""
     df =  move_column_to_last(df, "text")

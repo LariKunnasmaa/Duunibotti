@@ -6,6 +6,8 @@ from openpyxl.utils import get_column_letter
 from openpyxl import load_workbook
 
 def style_if_column_false(column_name):
+    """Color the row red if its value is false"""
+
     def _style(row):
         for _ in row:
             return ['background-color: red' if row[column_name] == False else
@@ -13,10 +15,12 @@ def style_if_column_false(column_name):
     return _style
 
 def combine_styles(row):
+    """Color the row red if its value is false"""
     red_style = style_if_column_false('remote')(row)
     return red_style
 
 def df_to_excel(df:pd.DataFrame, path = "Jobs.xlsx"):
+    """To excel wrapper"""
     df.to_excel(path, index=False)
     return path
 
